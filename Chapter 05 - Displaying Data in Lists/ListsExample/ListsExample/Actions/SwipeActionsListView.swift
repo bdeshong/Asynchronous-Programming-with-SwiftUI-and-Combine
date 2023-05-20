@@ -52,12 +52,12 @@ struct SwipeActionsListView: View {
         .badge(item.badge)
         .swipeActions(edge: .leading) {
           Button (action: { viewModel.markItemRead(item) }) {
-            if let isRead = item.isRead, isRead == true {
+//            if let isRead = item.isRead, isRead == true {
               Label("Read", systemImage: "envelope.badge.fill")
-            }
-            else {
-              Label("Unread", systemImage: "envelope.open.fill")
-            }
+//            }
+//            else {
+//              Label("Unread", systemImage: "envelope.open.fill")
+//            }
           }
           .tint(.blue)
         }

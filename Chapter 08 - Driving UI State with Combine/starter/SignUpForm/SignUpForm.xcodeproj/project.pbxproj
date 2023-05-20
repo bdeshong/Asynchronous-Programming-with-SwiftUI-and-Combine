@@ -11,6 +11,7 @@
 		8864075A277A35B2001446A6 /* SignUpForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88640759277A35B2001446A6 /* SignUpForm.swift */; };
 		8864075C277A35B4001446A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8864075B277A35B4001446A6 /* Assets.xcassets */; };
 		8864075F277A35B4001446A6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8864075E277A35B4001446A6 /* Preview Assets.xcassets */; };
+		D3429B462A192A4400534E95 /* Navajo-Swift in Frameworks */ = {isa = PBXBuildFile; productRef = D3429B452A192A4400534E95 /* Navajo-Swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3429B462A192A4400534E95 /* Navajo-Swift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,6 +86,7 @@
 			);
 			name = SignUpForm;
 			packageProductDependencies = (
+				D3429B452A192A4400534E95 /* Navajo-Swift */,
 			);
 			productName = SignUpForm;
 			productReference = 88640754277A35B2001446A6 /* SignUpForm.app */;
@@ -114,6 +117,7 @@
 			);
 			mainGroup = 8864074B277A35B2001446A6;
 			packageReferences = (
+				D3429B442A192A4400534E95 /* XCRemoteSwiftPackageReference "Navajo-Swift" */,
 			);
 			productRefGroup = 88640755277A35B2001446A6 /* Products */;
 			projectDirPath = "";
@@ -347,6 +351,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D3429B442A192A4400534E95 /* XCRemoteSwiftPackageReference "Navajo-Swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Wistas23/Navajo-Swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D3429B452A192A4400534E95 /* Navajo-Swift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D3429B442A192A4400534E95 /* XCRemoteSwiftPackageReference "Navajo-Swift" */;
+			productName = "Navajo-Swift";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8864074C277A35B2001446A6 /* Project object */;
 }

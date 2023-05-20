@@ -8,23 +8,25 @@
 import SwiftUI
 
 struct ContentView: View {
-  var body: some View {
-    Form {
-      Text("Asynchronous Programming with SwiftUI and Combine")
-        .font(.headline).foregroundColor(.red)
-      Image("book-cover-combine")
-      Label("Peter Friese", systemImage: "person.crop.rectangle")
-      Label("451 pages", systemImage: "book")
-      Toggle("Read", isOn: .constant(true))
-      Button(action: {}) {
-        Label("Share", systemImage: "square.and.arrow.up")
-      }
+    @State var book: Book
+    
+    var body: some View {
+        Form {
+            Text(book.title)
+                .font(.headline).foregroundColor(.red)
+            Image(book.largeCoverImageName)
+            Label(book.author, systemImage: "person.crop.rectangle")
+            Label("\(book.pages) pages", systemImage: "book")
+            Toggle("Read", isOn: .constant(book.isRead))
+            Button(action: {}) {
+                Label("Edit", systemImage: "pencil")
+            }
+        }
     }
-  }
 }
 
 struct ContentView_Previews: PreviewProvider {
   static var previews: some View {
-    ContentView()
+      ContentView(book: Book.sampleBooks[0])
   }
 }
